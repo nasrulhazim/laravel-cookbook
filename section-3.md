@@ -7,8 +7,8 @@ Basic requirement to create a form
 - [ ] Form Element `<form></form>`
 - [ ] Action - Form submission to where, basically a URL.
 - [ ] Method - HTTP Method Type: `GET`, `POST`, `PUT`, `DELETE`
-- [ ] CSRF Token - `{{ csrf_token() }}
-- [ ] Method Spoofing - Only for `PUT` and `DELETE`: {{ method_field('PUT') }}
+- [ ] CSRF Token - `{{ csrf_token() }}`
+- [ ] Method Spoofing - Only for `PUT` and `DELETE`: `{{ method_field('PUT') }}`
 
 ## Create
 
