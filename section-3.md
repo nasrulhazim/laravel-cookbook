@@ -4,17 +4,41 @@
 
 Basic requirement to create a form
 
-- [ ] Form Element `<form></form>`
+- [ ] Form Element
 - [ ] Action - Form submission to where, basically a URL.
-- [ ] Method - HTTP Method Type: `GET`, `POST`, `PUT`, `DELETE`
-- [ ] CSRF Token - `{{ csrf_token() }}`
-- [ ] Method Spoofing - Only for `PUT` and `DELETE`: `{{ method_field('PUT') }}`
+- [ ] Method
+- [ ] CSRF Token
+- [ ] Method Spoofing - Read more [here](https://laravel.com/docs/5.3/routing#form-method-spoofing)
 
 ## Create
 
+```php
+<form action="{{ route('resources.store') }}" method="POST">
+	{{ csrf_token() }}
+</form>
+```
+
 ## Update
 
+```php
+<form action="{{ route('resources.store') }}" method="POST">
+	{{ csrf_token() }}
+
+	<!-- Method Spoofing -->
+	{{ method_field('PUT') }}
+</form>
+```
+
 ## Delete
+
+```php
+<form action="{{ route('resources.store') }}" method="POST">
+	{{ csrf_token() }}
+
+	<!-- Method Spoofing -->
+	{{ method_field('DELETE') }}
+</form>
+```
 
 # How to create a validator
 
