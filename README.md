@@ -58,3 +58,6 @@ This section covered request from intermediate level developers.
 # Checklist
 
 In this section, the author have come up questions checklist as a test, to check either developers know and understand how to develop web applications with Laravel Framework.
+
+
+
