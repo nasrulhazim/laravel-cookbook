@@ -2,7 +2,7 @@
 
 Laravel Cookbook based on author experiences in teaching Laravel Framework. This book intended to simplify the understanding on how to develop web applications with Laravel Framework.
 
-## [Section 1: Data Preparation](https://github.com/nazrulhazim/laravel-cookbook/blob/master/section-1.md)
+## [Section 1: Data Preparation](https://github.com/nasrulhazim/laravel-cookbook/blob/master/section-1.md)
 
 In this section, developers will be exposed, how to prepare your data from scratch. Following are the basic steps in preparing data.
 
