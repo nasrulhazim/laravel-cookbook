@@ -19,6 +19,52 @@ public function aboutUs()
 }
 ```
 
+### Pass Data to Blade Template
+
+There's 3 methods available on how to pass data from controller to blade template.
+
+#### Method 1
+
+```php
+public function aboutUs()
+{
+	$company = 'Cleanique Coders Resources';
+	$founder = 'Nasrul Hazim';
+	
+	return view('pages.index')
+		->with('company', $company)
+		->with('founder', $founder);
+}
+```
+
+#### Method 2
+
+```php
+public function aboutUs()
+{
+	$company = 'Cleanique Coders Resources';
+	$founder = 'Nasrul Hazim';
+	
+	return view('pages.index',[
+		'company' => $company,
+		'founder' => $founder,
+		]);
+}
+```
+
+
+#### Method 3
+
+```php
+public function aboutUs()
+{
+	$company = 'Cleanique Coders Resources';
+	$founder = 'Nasrul Hazim';
+	
+	return view('pages.index',compact('company','founder'));
+}
+```
+
 ## View
 
 Create the view - create new folder in `resources/views/` named `pages`. In `pages`, create `aboutUs.blade.php`. Add the following content:
